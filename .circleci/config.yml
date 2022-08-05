@@ -24,6 +24,7 @@ jobs:
       - run:
           name: install dependencies
           command: |
+            apk install build-essential
             python3 -m venv venv
             . venv/bin/activate
             make install
